@@ -144,6 +144,13 @@ img {
     border: 1px solid #bcd0e5;
     border-radius: 4px;
     color: #173a56;
+    transition: color 350ms ease, border 350ms ease;
+  }
+
+  .header-sign-in:hover,
+  .header-sign-in:focus {
+    border: 1px solid #22343d;
+    color: #02897a;
   }
 
   .header-sign-up {
@@ -153,6 +160,12 @@ img {
     border-radius: 4px;
     background-color: #02897a;
     color: #fff;
+    transition: background-color 350ms ease;
+  }
+
+  .header-sign-up:hover,
+  .header-sign-up:focus {
+    background-color: #173a56;
   }
 }
 /* section hero */
@@ -215,24 +228,33 @@ img {
   border: none;
   font-weight: 700;
   color: #fff;
+  transition: background-color 350ms ease;
 }
 
-.hero-icon {
-  fill: #02897a;
+.btn-hero-start:hover,
+.btn-hero-start:focus {
+  background-color: #173a56;
 }
 
-.watch-video {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.btn-hero-watch-icon {
+  fill: currentColor;
 }
 
 .btn-hero-watch {
+  display: flex;
+  align-items: center;
+  gap: 9px;
   border: none;
   font-weight: 600;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #02897a;
+  transition: color 350ms ease;
+}
+
+.btn-hero-watch:hover,
+.btn-hero-watch:focus {
+  color: #173a56;
 }
 
 @media screen and (min-width: 1150px) {
@@ -366,6 +388,12 @@ img {
   color: #fff;
   margin: 0 auto;
   display: block;
+  transition: background-color 350ms ease;
+}
+
+.product-btn:hover,
+.product-btn:focus {
+  background-color: #173a56;
 }
 
 @media screen and (min-width: 1150px) {
@@ -412,14 +440,12 @@ img {
   gap: 50px;
 }
 
-.management-title,
-.support-title {
+.management-title {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 8px;
 }
-.management-title-descr,
-.support-title-descr {
+.management-title-descr {
   font-weight: 700;
   font-size: 32px;
   margin-bottom: 16px;
@@ -435,13 +461,13 @@ img {
 }
 
 .management-item-subtitle {
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.63;
   margin-bottom: 12px;
 }
 .management-item-text {
   line-height: 1.63;
-  max-width: 334px;
 }
 
 .management-img {
@@ -504,15 +530,29 @@ img {
   margin-bottom: 50px;
 }
 
-.support-subtitle {
-  line-height: 1.63;
+.support-title {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.support-title-descr {
+  font-weight: 700;
+  font-size: 32px;
   margin-bottom: 16px;
 }
+
+.support-subtitle {
+  line-height: 1.625;
+  margin-bottom: 16px;
+}
+
 .support-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 16px;
 }
+
 .support-item {
   display: flex;
   align-items: center;
@@ -545,6 +585,7 @@ img {
 .support-icon {
   fill: #fff;
 }
+
 .support-item-text {
   line-height: 1.63;
 }
@@ -580,5 +621,234 @@ img {
 
   .support-item-text {
     width: 346px;
+  }
+}
+
+/* section collab */
+
+.collab {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.collab-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.collab-img {
+  width: 350px;
+  margin-bottom: 50px;
+}
+
+.collab-title {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.collab-title-descr {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.collab-subtitle {
+  line-height: 1.63;
+  margin-bottom: 16px;
+}
+
+.collab-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.collab-item-subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.63;
+  margin-bottom: 12px;
+}
+
+.collab-item-text {
+  line-height: 1.63;
+}
+
+@media screen and (min-width: 1150px) {
+  .collab {
+    padding-top: 50px;
+    padding-bottom: 75px;
+  }
+
+  .collab-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 84px;
+  }
+
+  .collab-text-wrap {
+    max-width: 434px;
+  }
+
+  .collab-title-descr {
+    margin-bottom: 25px;
+  }
+
+  .collab-subtitle {
+    margin-bottom: 30px;
+  }
+
+  .collab-list {
+    gap: 25px;
+  }
+
+  .collab-img {
+    width: 540px;
+  }
+}
+
+/* section process */
+
+.process {
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+.process-container {
+  padding-right: 32px;
+  padding-left: 31px;
+}
+
+.process-title {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.process-subtitle {
+  font-weight: 500;
+  line-height: 1.63;
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.process-list {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.process-item {
+  display: flex;
+  gap: 15px;
+}
+
+.process-ava {
+  width: 90px;
+}
+
+.process-item-text-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 241px;
+  min-height: 70px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 10px 0 rgba(23, 58, 86, 0.15);
+}
+
+.process-item-text {
+  font-weight: 500;
+  text-align: center;
+  color: #2f281e;
+  width: 175px;
+}
+
+.process-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.process-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  min-width: 216px;
+  min-height: 53px;
+  background-color: #02897a;
+  border: none;
+  font-weight: 700;
+  color: #fff;
+  transition: background-color 350ms ease;
+}
+
+.process-btn:hover,
+.process-btn:focus {
+  background-color: #173a56;
+}
+
+@media screen and (min-width: 1150px) {
+  .process {
+    padding-top: 75px;
+    padding-bottom: 50px;
+  }
+
+  .process-container {
+    padding-right: 117px;
+    padding-left: 117px;
+  }
+
+  .process-title {
+    margin-bottom: 25px;
+  }
+
+  .process-subtitle {
+    max-width: 542px;
+  }
+
+  .process-adapt {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 50px;
+  }
+
+  .process-list {
+    margin-bottom: 0;
+  }
+
+  .process-list-one {
+    flex-direction: column;
+  }
+
+  .process-list-two {
+    flex-direction: column-reverse;
+  }
+
+  .process-ava {
+    width: 98px;
+  }
+
+  .process-item {
+    gap: 19px;
+  }
+
+  .process-item-text-wrap {
+    width: 281px;
+    height: 50px;
+    border-radius: 35px;
+  }
+
+  .process-item-text {
+    width: 100%;
   }
 }

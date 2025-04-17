@@ -25,7 +25,7 @@
         <nav class="header-nav">
           <div class="mobile-header">
             <a href="./index.html" class="header-logo">
-              <svg class="header-logo-icon" width="40" height="40">
+              <svg class="header-logo-icon" width="40" height="36">
                 <use href="./images/icons.svg#icon-logo"></use></svg
               >Product
             </a>
@@ -75,14 +75,12 @@
                 </button>
               </li>
               <li>
-                <div class="watch-video">
-                  <svg class="hero-icon" width="20" height="18">
+                <button type="button" class="btn-hero-watch">
+                  <svg class="btn-hero-watch-icon" width="20" height="18">
                     <use href="./images/icons.svg#icon-triangle"></use>
                   </svg>
-                  <button type="button" class="btn-hero-watch">
-                    Watch the Video
-                  </button>
-                </div>
+                  Watch the Video
+                </button>
               </li>
             </ul>
           </div>
@@ -286,12 +284,12 @@
       </section>
       <!-- Collaborative -->
       <section class="collab">
-        <div class="container">
+        <div class="container collab-container">
           <div class="collab-text-wrap">
-            <h2 class="collab-title">
-              <span class="collab-title-part">Optimisation for</span>
-              Collaborative
-            </h2>
+            <h2 class="collab-title">Optimisation for</h2>
+
+            <p class="collab-title-descr">Collaborative</p>
+
             <p class="collab-subtitle">
               Few would argue that, despite the advancements of feminism over
               the past three decades, women still face a double standard when it
@@ -314,39 +312,150 @@
               </li>
             </ul>
           </div>
-          <img
-            src="./images/collaboration-img-min.png"
-            alt="collaboration"
-            width="540"
-          />
+          <picture>
+            <source
+              media="(min-width: 1150px)"
+              srcset="
+                ./images/collaboration-dt.png        1x,
+                ./images/collaboration-dt@2x-min.png 2x
+              "
+            />
+            <source
+              media="(max-width: 1149px)"
+              srcset="
+                ./images/collaboration-mob-min.png    1x,
+                ./images/collaboration-mob@2x-min.png 2x
+              "
+            />
+            <img
+              class="collab-img"
+              src="./images/collaboration-dt.png"
+              alt="collaboration"
+            />
+          </picture>
         </div>
       </section>
       <!-- process -->
       <section class="process">
-        <div class="process-container">
+        <div class="process-container container">
           <h2 class="process-title">Quick & Easy Process</h2>
           <p class="process-subtitle">
             Do you require some help for your project: Conception workshop,
             prototyping, marketing strategy, landing page, Ux/UI?
           </p>
-          <ul class="process-list">
-            <li class="process-item">
-              <img src="./images/avatar-1.png" alt="avatar-1" width="98" />
-              <p class="process-item-text">I can take care of your pitch</p>
-            </li>
-            <li class="process-item reverse">
-              <img src="./images/avatar-2.png" alt="avatar-2" width="98" />
-              <p class="process-item-text">I can prototype your app</p>
-            </li>
-            <li class="process-item reverse">
-              <img src="./images/avatar-3.png" alt="avatar-3" width="98" />
-              <p class="process-item-text">I can take care of your pitch</p>
-            </li>
-            <li class="process-item">
-              <img src="./images/avatar-4.png" alt="avatar-4" width="98" />
-              <p class="process-item-text">I can help marketing strategy</p>
-            </li>
-          </ul>
+          <div class="process-adapt">
+            <ul class="process-list process-list-one">
+              <li class="process-item">
+                <picture>
+                  <source
+                    media="(min-width: 1150px)"
+                    srcset="
+                      ./images/avatar-1-dt.png        1x,
+                      ./images/avatar-1-dt@2x-min.png 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1149px)"
+                    srcset="
+                      ./images/avatar-1-mob.png    1x,
+                      ./images/Avatar-1-mob@2x.png 2x
+                    "
+                  />
+                  <img
+                    src="./images/avatar-1-dt.png"
+                    alt="woman"
+                    class="process-ava"
+                  />
+                </picture>
+
+                <div class="process-item-text-wrap">
+                  <p class="process-item-text">I can take care of your pitch</p>
+                </div>
+              </li>
+              <li class="process-item reverse">
+                <picture>
+                  <source
+                    media="(min-width: 1150px)"
+                    srcset="
+                      ./images/avatar-2-dt.png        1x,
+                      ./images/avatar-2-dt@2x-min.png 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1149px)"
+                    srcset="
+                      ./images/avatar-2-mob.png    1x,
+                      ./images/Avatar-2-mob@2x.png 2x
+                    "
+                  />
+                  <img
+                    src="./images/avatar-2-dt.png"
+                    alt="man"
+                    class="process-ava"
+                  />
+                </picture>
+
+                <div class="process-item-text-wrap">
+                  <p class="process-item-text">I can design you website</p>
+                </div>
+              </li>
+            </ul>
+            <ul class="process-list process-list-two">
+              <li class="process-item">
+                <picture>
+                  <source
+                    media="(min-width: )1150px"
+                    srcset="
+                      ./images/avatar-3-dt.png        1x,
+                      ./images/avatar-3-dt@2x-min.png 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1149px)"
+                    srcset="
+                      ./images/avatar-3-mob.png    1x,
+                      ./images/avatar-3-mob@2x.png 2x
+                    "
+                  />
+                </picture>
+                <img
+                  src="./images/avatar-3-dt.png"
+                  alt="man"
+                  class="process-ava"
+                />
+                <div class="process-item-text-wrap">
+                  <p class="process-item-text">I can help marketing strategy</p>
+                </div>
+              </li>
+              <li class="process-item reverse">
+                <picture>
+                  <source
+                    media="(min-width: 1150px)"
+                    srcset="
+                      ./images/avatar-4-dt.png        1x,
+                      ./images/avatar-4-dt@2x-min.png 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1149px)"
+                    srcset="
+                      ./images/avatar-4-mob.png    1x,
+                      ./images/avatar-4-mob@2x.png 2x
+                    "
+                  />
+                  <img
+                    src="./images/avatar-4-dt.png"
+                    alt="woman"
+                    class="process-ava"
+                  />
+                </picture>
+
+                <div class="process-item-text-wrap">
+                  <p class="process-item-text">I can prototype your app</p>
+                </div>
+              </li>
+            </ul>
+          </div>
           <button class="process-btn" type="button">Contact our expert</button>
         </div>
       </section>
