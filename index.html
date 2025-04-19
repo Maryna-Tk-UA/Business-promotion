@@ -112,7 +112,7 @@
           <ul class="product-list">
             <li class="product-item">
               <div class="product-color product-color-one">
-                <svg class="product-icon" width="11" height="18">
+                <svg class="product-icon" width="12" height="18">
                   <use href="./images/icons.svg#icon-one"></use>
                 </svg>
               </div>
@@ -799,14 +799,30 @@
       </section>
       <!-- call -->
       <section class="call-section">
-        <div class="container call-container">
+        <div class="container">
           <div class="call-part-one">
             <h2 class="call-title">
               Join 100 Compannies who boost their business with Product
             </h2>
             <button type="button" class="call-btn">Get This</button>
           </div>
-          <img src="./images/screen-min.png" alt="screen" class="call-img" />
+          <picture class="call-pic">
+            <source
+              media="(min-width: 1150px)"
+              srcset="
+                ./images/screen-dt.png        1x,
+                ./images/screen-dt@2x-min.png 2x
+              "
+            />
+            <source
+              media="(max-width: 1149px)"
+              srcset="
+                ./images/screen-mob-min.png    1x,
+                ./images/screen-mob@2x-min.png 2x
+              "
+            />
+            <img src="./images/screen-dt.png" alt="screen" class="call-img" />
+          </picture>
         </div>
       </section>
     </main>
